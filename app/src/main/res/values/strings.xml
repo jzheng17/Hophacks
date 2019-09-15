@@ -1,6 +1,10 @@
 <resources>
     <string name="app_name">Hophacks</string>
     <string name="title_home">Home</string>
+    <string name="title_home_title">Welcome to meal.ly!</string>
+    <string name="title_home_subtitle">Register for discount grocery alerts from nearby stores</string>
+    <string name="title_rsvp_title">Store Discount Alerts</string>
+    <string name="title_rsvp_subtitle">RSVP to alerts in SMS</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
 </resources>

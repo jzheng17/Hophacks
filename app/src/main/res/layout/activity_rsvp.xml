@@ -5,17 +5,17 @@
     android:id="@+id/container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".RSVPActivity">
 
     <TextView
-        android:id="@+id/main_title"
+        android:id="@+id/rsvp_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/activity_horizontal_margin"
         android:layout_marginTop="@dimen/activity_vertical_margin"
         android:layout_marginBottom="@dimen/activity_vertical_margin"
         android:textStyle="bold"
-        android:text="@string/title_home_title"
+        android:text="@string/title_rsvp_title"
         android:textSize="24sp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -27,10 +27,10 @@
         android:layout_marginStart="@dimen/activity_horizontal_margin"
         android:layout_marginTop="@dimen/activity_vertical_margin"
         android:layout_marginBottom="@dimen/activity_vertical_margin"
-        android:text="@string/title_home_subtitle"
+        android:text="@string/title_rsvp_subtitle"
         android:textSize="24sp"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/main_title" />
+        app:layout_constraintTop_toBottomOf="@+id/rsvp_title" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/nav_view"
@@ -44,27 +44,8 @@
         app:layout_constraintRight_toRightOf="parent"
         app:menu="@menu/bottom_nav_menu" />
 
-
-
-    <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/search_box"
-        android:layout_marginStart="@dimen/activity_horizontal_margin"
-        android:layout_marginTop="@dimen/activity_vertical_margin"
-        android:layout_marginEnd="@dimen/activity_horizontal_margin"
-        android:layout_marginBottom="@dimen/activity_vertical_margin"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Enter a location to look for"
-        android:inputType="textShortMessage"
-        android:translationX="0dp"
-        android:translationY="20dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/main_title"
-        android:visibility="gone"/>
-
-
-    <CheckBox
-        android:id="@+id/checkBox1"
+    <TextView
+        android:id="@+id/textBox1"
         android:layout_marginStart="@dimen/activity_horizontal_margin"
         android:layout_marginTop="@dimen/activity_vertical_margin"
         android:layout_marginEnd="@dimen/activity_horizontal_margin"
@@ -79,8 +60,8 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/main_subtitle"/>
 
-    <CheckBox
-        android:id="@+id/checkBox2"
+    <TextView
+        android:id="@+id/textBox2"
         android:layout_marginStart="@dimen/activity_horizontal_margin"
         android:layout_marginTop="@dimen/activity_vertical_margin"
         android:layout_marginEnd="@dimen/activity_horizontal_margin"
@@ -93,10 +74,10 @@
         android:translationX="0dp"
         android:translationY="0dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox1"/>
+        app:layout_constraintTop_toBottomOf="@+id/textBox1"/>
 
-    <CheckBox
-        android:id="@+id/checkBox3"
+    <TextView
+        android:id="@+id/textBox3"
         android:layout_marginStart="@dimen/activity_horizontal_margin"
         android:layout_marginTop="@dimen/activity_vertical_margin"
         android:layout_marginEnd="@dimen/activity_horizontal_margin"
@@ -109,6 +90,6 @@
         android:translationX="0dp"
         android:translationY="0dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox2"/>
+        app:layout_constraintTop_toBottomOf="@+id/textBox2"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
